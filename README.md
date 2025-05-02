@@ -1,4 +1,4 @@
-# BookMyTix - Flutter Flight Booking App UI Kit
+# BookMyTix Starter - Flutter Flight Booking App UI Kit
 ----------
 
 ### Read documentation here
@@ -17,7 +17,7 @@ https://ilhammeidi.github.io/bookmytix-docs/
 - And many more...
 
 # Get The Full Version
-![BookMyTix](https://ilhammeidi.github.io/bookmytix-docs/images/banner.jpg)
+[![BookMyTix](https://ilhammeidi.github.io/bookmytix-docs/images/banner.jpg)](https://codecanyon.net/item/bookmytix-flutter-flight-booking-app-template/57827751)
 
 [GET IT NOW on Envato](https://codecanyon.net/item/bookmytix-flutter-flight-booking-app-template/57827751)
 
