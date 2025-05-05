@@ -8,7 +8,7 @@ class AppLink {
   static const resetPassword = '/reset-password';
 
   // HOME
-  static const home = '/';
+  static const home = '/home';
   static const notFound = '/not-found';
 
   // SEARCH

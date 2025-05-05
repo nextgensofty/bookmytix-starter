@@ -1,7 +1,6 @@
 import 'package:flight_app/screens/explore/explore_main.dart';
 import 'package:flight_app/screens/intro/intro_screen.dart';
 import 'package:flight_app/screens/intro/start_screen.dart';
-import 'package:flight_app/screens/not_found.dart';
 import 'package:flight_app/screens/orders/order_list.dart';
 import 'package:flight_app/screens/profile/profile_main.dart';
 import 'package:flight_app/screens/promo/promo_main.dart';
@@ -23,10 +22,6 @@ final List<GetPage> appRoutes = [
   GetPage(
     name: AppLink.intro,
     page: () => GeneralLayout(content: IntroScreen(saveIntroStatus: () {})),
-  ),
-  GetPage(
-    name: AppLink.notFound,
-    page: () => const GeneralLayout(content: NotFound()),
   ),
 
   // MY TICKET

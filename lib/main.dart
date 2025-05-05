@@ -1,3 +1,5 @@
+import 'package:flight_app/app/app_link.dart';
+import 'package:flight_app/screens/not_found.dart';
 import 'package:flutter/material.dart';
 import 'package:get/route_manager.dart';
 import 'package:get/state_manager.dart';
@@ -47,8 +49,12 @@ class MainApp extends StatelessWidget {
       themeMode: ThemeMode.system,
       theme: lightColorScheme,
       darkTheme: darkColorScheme,
-      initialRoute: '/',
+      initialRoute: AppLink.home,
       getPages: appRoutes,
+      unknownRoute: GetPage(
+        name: AppLink.notFound,
+        page: () => const NotFound(),
+      ),
       builder: (context, child) => MediaQuery(
         data: MediaQuery.of(context).copyWith(boldText: false),
         child: child!,
