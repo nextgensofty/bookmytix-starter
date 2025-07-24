@@ -17,7 +17,7 @@ https://ilhammeidi.github.io/bookmytix-docs/
 - And many more...
 
 # Get The Full Version
-[![BookMyTix](https://ilhammeidi.github.io/bookmytix-docs/images/banner.jpg)](https://codecanyon.net/item/bookmytix-flutter-flight-booking-app-template/57827751)
+[![BookMyTix](https://github.com/ilhammeidi/bookmytix-starter/blob/main/assets/images/preview_white.jpg)](https://codecanyon.net/item/bookmytix-flutter-flight-booking-app-template/57827751)
 
 [GET IT NOW on Envato](https://codecanyon.net/item/bookmytix-flutter-flight-booking-app-template/57827751)
 
