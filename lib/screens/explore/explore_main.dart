@@ -18,13 +18,16 @@ class ExploreMain extends StatelessWidget {
     return Scaffold(
       body: CustomScrollView(
         slivers: [
-          const SliverToBoxAdapter(child: Stack(
+          SliverToBoxAdapter(child: Stack(
             alignment: Alignment.topCenter,
             children: [
               /// BANNER ILLLUSTRATION
               BannerExplore(),
               /// HEADER
               Positioned(
+                left: spacingUnit(1),
+                right: spacingUnit(1),
+                top: MediaQuery.of(context).padding.top,
                 child: SizedBox(child: HeaderExplore())
               ),
             ],

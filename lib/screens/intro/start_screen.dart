@@ -23,7 +23,7 @@ class _StartScreenState extends State<StartScreen> {
     });
   }
 
-  _saveIntroStatus() async {
+  Future<void> _saveIntroStatus() async {
     SharedPreferences pref = await _prefs;
     pref.setBool(_key, true);
     setState(() {
@@ -40,7 +40,7 @@ class _StartScreenState extends State<StartScreen> {
   @override
   Widget build(BuildContext context) {
     return _isFinishedIntro ?
-      const GeneralLayout(content: Home(), isHome: true)
+      const GeneralLayout(content: Home())
       : IntroScreen(saveIntroStatus: () {
         _saveIntroStatus();
       }

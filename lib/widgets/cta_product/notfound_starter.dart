@@ -10,7 +10,7 @@ import 'package:get/route_manager.dart';
 class NotfoundStarter extends StatelessWidget {
   const NotfoundStarter({super.key});
 
-  Future<void> _launchUrl(url) async {
+  Future<void> _launchUrl(Uri url) async {
     if (!await launchUrl(url)) {
       throw Exception('Could not launch $url');
     }

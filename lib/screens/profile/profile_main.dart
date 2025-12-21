@@ -20,8 +20,8 @@ class _ProfileMainState extends State<ProfileMain> {
       slivers: [
         SliverPersistentHeader(
           delegate: ProfileBannerHeader(
-            minExtent: topPadding + 120,
-            maxExtent: 300,
+            minExtent: topPadding + 130,
+            maxExtent: topPadding + 300,
           ),
           pinned: true,
         ),

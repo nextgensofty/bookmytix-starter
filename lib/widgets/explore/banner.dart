@@ -17,7 +17,7 @@ class BannerExplore extends StatelessWidget {
     final bool isDark = Get.isDarkMode;
 
     return Container(
-      height: 400,
+      height: 400 + MediaQuery.of(context).padding.top,
       decoration: BoxDecoration(
         color: isDark ? ThemePalette.primaryDark : ThemePalette.primaryLight
       ),

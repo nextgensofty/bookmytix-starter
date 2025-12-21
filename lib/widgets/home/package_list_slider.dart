@@ -28,7 +28,7 @@ class PackageListSlider extends StatelessWidget {
       ),
       SizedBox(height: spacingUnit(2)),
       SizedBox(
-        height: cardHeight,
+        height: cardHeight + 16,
         child: ListView.builder(
           shrinkWrap: true,
           physics: const ClampingScrollPhysics(),

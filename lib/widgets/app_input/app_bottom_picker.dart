@@ -67,34 +67,35 @@ class _BottomPickerRadioState extends State<BottomPickerRadio> {
                 borderRadius: BorderRadius.circular(10),
                 color: colorScheme(context).surface,
               ),
-              child: Column(
-                children: [
-                  ...widget.options.map(
-                    (option) => ListTile(
-                      onTap: () => _onChanged(option.value, context),
-                      title: Text(option.label),
-                      subtitle:
-                        option.text != null ? Text(option.text ?? '') : null,
-                        visualDensity: const VisualDensity(
-                          horizontal: -4,
+              child: RadioGroup<String>(
+                groupValue: _value,
+                onChanged: (String? value) => _onChanged(value, context),
+                child: Column(
+                  children: [
+                    ...widget.options.map(
+                      (option) => ListTile(
+                        onTap: () => _onChanged(option.value, context),
+                        title: Text(option.label),
+                        subtitle:
+                          option.text != null ? Text(option.text ?? '') : null,
+                          visualDensity: const VisualDensity(
+                            horizontal: -4,
+                          ),
+                        contentPadding: const EdgeInsets.only(
+                          left: 5,
+                          right: 5,
                         ),
-                      contentPadding: const EdgeInsets.only(
-                        left: 5,
-                        right: 5,
-                      ),
-                      minVerticalPadding: 0,
-                      leading: Radio<String>(
-                        visualDensity: const VisualDensity(
-                          horizontal: -4,
+                        minVerticalPadding: 0,
+                        leading: Radio<String>(
+                          visualDensity: const VisualDensity(
+                            horizontal: -4,
+                          ),
+                          value: option.value,
                         ),
-                        value: option.value,
-                        groupValue: _value,
-                        onChanged: (String? value) =>
-                          _onChanged(value, context),
                       ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             ),
             const VSpace()

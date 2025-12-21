@@ -21,7 +21,7 @@ class SettingList extends StatelessWidget {
 
   final Future<SharedPreferences> _prefs = SharedPreferences.getInstance();
 
-  _getThemeStatus() async {
+  Future<void> _getThemeStatus() async {
     var mode = _prefs.then((SharedPreferences prefs) {
       return prefs.getString('appTheme') ?? 'auto';
     }).obs;
@@ -29,7 +29,7 @@ class SettingList extends StatelessWidget {
     _themeMode.value = await mode.value;
   }
 
-  _saveThemeStatus(val) async {
+  Future<void> _saveThemeStatus(String val) async {
     SharedPreferences pref = await _prefs;
 
     _themeMode.value = val;

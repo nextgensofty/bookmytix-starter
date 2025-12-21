@@ -70,7 +70,7 @@ class ProfileBannerHeader extends SliverPersistentHeaderDelegate {
           
               /// TOP BAR
               Positioned(
-                top: spacingUnit(1),
+                top: MediaQuery.of(context).padding.top + 8,
                 left: spacingUnit(2),
                 child: AnimatedOpacity(
                   opacity: showItem ? 0 : 1,
@@ -86,7 +86,7 @@ class ProfileBannerHeader extends SliverPersistentHeaderDelegate {
                 ),
               ),
               Positioned(
-                top: spacingUnit(1),
+                top: MediaQuery.of(context).padding.top + 8,
                 right: spacingUnit(1),
                 child: Row(children: homeActionGroup(context, false)),
               ),

@@ -20,7 +20,6 @@ class HeaderExplore extends StatelessWidget {
 
     return Container(
       height: 60,
-      width: double.infinity,
       padding: EdgeInsets.all(spacingUnit(1)),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,

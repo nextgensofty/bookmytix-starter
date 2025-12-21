@@ -9,7 +9,7 @@ import 'package:url_launcher/url_launcher.dart';
 class NewsList extends StatelessWidget {
   const NewsList({super.key});
 
-  Future<void> _launchUrl(url) async {
+  Future<void> _launchUrl(Uri url) async {
     if (!await launchUrl(url)) {
       throw Exception('Could not launch $url');
     }
