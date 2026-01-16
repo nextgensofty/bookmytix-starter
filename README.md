@@ -1,8 +1,7 @@
 # BookMyTix Starter - Flutter Flight Booking App UI Kit
 ----------
 <a href="https://www.buymeacoffee.com/raajkumarc8" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
-### Read documentation here
-https://ilhammeidi.github.io/bookmytix-docs/
+
 
 ### Template Feature
 - Flutter. Full source code (Dart)
